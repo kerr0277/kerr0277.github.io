@@ -1,10 +1,12 @@
 body {
-  header, footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+header, footer {
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 h2 {
@@ -24,14 +26,16 @@ footer p {
   box-shadow: 0 0 2px 1px black;
 }
 
-ul.hobbies {
+.hobby-list{
   list-style-type: square;
 }
 
-
+.hobby-list li:nth-child(odd) {
+  background-color: bisque;
+}
 
 nav ul {
-  list-style: none;
+  list-style: square;
   padding: 0;
 }
 
