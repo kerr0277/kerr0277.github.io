@@ -1,19 +1,20 @@
-html{
-scroll-behavior:smooth;
-}
+/* GENERAL */
 
 body{
-margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:linear-gradient(to bottom,#eef2f7,#cfd8e3);
+background:#d6dde1;
+margin:0;
 }
 
 .container{
 width:900px;
-margin:40px auto;
-background:#ffffff;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+margin:auto;
+background:#eef3f5;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
+
+
+/* HEADER */
 
 header{
 position:relative;
@@ -21,135 +22,125 @@ position:relative;
 
 header img{
 width:100%;
+height:320px;
+object-fit:cover;
 display:block;
 }
 
 header h1{
 position:absolute;
-top:45%;
+top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 color:white;
-font-size:50px;
+font-size:55px;
+text-align:center;
 letter-spacing:2px;
-text-shadow:0 4px 10px rgba(0,0,0,0.8);
 }
 
+
+/* NAVIGATION */
+
 nav{
-background:#1f3f66;
-text-align:center;
+background:#1e3a5f;
 }
 
 nav ul{
-margin:0;
-padding:15px 0;
 list-style:none;
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
 }
 
 nav li{
-display:inline-block;
-margin:0 60px;
+padding:15px 40px;
+border-right:1px solid white;
+}
+
+nav li:last-child{
+border-right:none;
 }
 
 nav a{
 text-decoration:none;
 color:white;
 font-weight:bold;
-letter-spacing:1px;
+letter-spacing:2px;
 }
 
-nav a:hover{
-color:#bcd3ff;
-}
+
+/* MAIN */
 
 main{
-padding:35px;
-color:#333;
+padding:25px;
 }
 
 h2{
-color:#1f3f66;
-margin-top:0;
+margin-top:30px;
+color:#1e3a5f;
 }
+
+
+/* IMAGE FLOAT */
 
 .float-img{
+width:200px;
 float:left;
-width:250px;
-margin-right:22px;
+margin-right:20px;
 margin-bottom:10px;
 border-radius:4px;
-box-shadow:0 3px 8px rgba(0,0,0,0.2);
 }
 
-section{
-margin-bottom:35px;
-}
 
-section::after{
-content:"";
-display:block;
-clear:both;
-}
+/* LIST */
 
 ul{
-padding-left:20px;
+margin-left:20px;
 }
+
+
+/* FORM */
 
 form{
-border:1px solid #d0d8e2;
-padding:22px;
-background:#f6f9fc;
-border-radius:4px;
+border:1px solid #999;
+padding:20px;
+margin-top:20px;
 }
 
-label{
-display:block;
-margin-top:12px;
-font-weight:600;
-}
-
-input[type="text"],
-input[type="email"],
-textarea{
+input, textarea{
 width:100%;
-padding:9px;
-margin-top:5px;
-border:1px solid #ccd6e0;
-border-radius:3px;
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
 }
-
-textarea{
-height:100px;
-}
-
 .radio-group{
-margin-top:12px;
+display:flex;
+gap:30px;
+margin:10px 0;
 }
 
 .radio-group label{
-display:inline;
-margin-right:20px;
-}
-
-button{
-margin-top:15px;
-padding:10px 22px;
-background:#1f3f66;
-color:white;
-border:none;
-border-radius:3px;
-cursor:pointer;
+display:flex;
+align-items:center;
+gap:6px;
+font-size:16px;
 font-weight:bold;
 }
 
-button:hover{
-background:#0f2a4a;
+button{
+background:#1e3a5f;
+color:white;
+padding:10px 20px;
+border:none;
+cursor:pointer;
 }
+
+
+/* FOOTER */
 
 footer{
 text-align:right;
-padding:12px 20px;
-background:#1f3f66;
-color:white;
-font-size:14px;
+padding:10px;
+background:#eef3f5;
 }
