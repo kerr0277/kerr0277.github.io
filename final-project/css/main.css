@@ -1,11 +1,10 @@
  /* ===== RESET ===== */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
-/* ===== GLOBAL ===== */
+/* ===== BASE ===== */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
@@ -13,23 +12,23 @@ body {
 }
 
 img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
 }
 
-/* ===== CONTAINER (1200px) ===== */
+/* ===== LAYOUT WRAPPER ===== */
 .header-container,
 .about-container,
 .services-container,
 .team-container,
 .contact-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  max-width: 75rem; /* 1200px */
+  margin-inline: auto;
+  padding: 1.25rem;
 }
 
 /* ===== HEADER ===== */
@@ -44,9 +43,9 @@ header {
 }
 
 header img {
-  width: 80px;
+  width: 5rem;
   background: #c78c06;
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 nav ul {
@@ -55,11 +54,11 @@ nav ul {
   text-align: center;
 }
 
-nav ul li {
-  padding: 12px;
+nav li {
+  padding: 0.75rem;
 }
 
-nav ul li a {
+nav a {
   color: #c78c06;
 }
 
@@ -71,35 +70,35 @@ form {
 
 form input {
   flex: 1;
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 form button {
-  background: #c78c06;
   border: none;
-  padding: 10px;
+  padding: 0.6rem;
+  background: #c78c06;
 }
 
 /* ===== HERO ===== */
 #home {
-  background: url('../images/main-banner.jpg') center/cover no-repeat;
-  padding: 100px 20px;
+  background: url('../images/main-banner.jpg') center / cover no-repeat;
+  padding: 6rem 1.25rem;
   display: flex;
   align-items: center;
-  color: white;
+  color: #fff;
 }
 
 .hero-content {
   background: rgba(0,0,0,0.6);
-  padding: 30px;
-  max-width: 600px;
+  padding: 2rem;
+  max-width: 37.5rem;
 }
 
 .btn {
-  background: #c78c06;
-  padding: 12px 20px;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 1rem;
+  padding: 0.75rem 1.2rem;
+  background: #c78c06;
   color: #222;
 }
 
@@ -111,18 +110,18 @@ form button {
 .about-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 /* ===== SERVICES ===== */
 #services {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .services-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .service {
@@ -130,51 +129,51 @@ form button {
 }
 
 .service h3 {
-  padding: 15px;
+  padding: 1rem;
 }
 
 .service p {
-  padding: 0 15px 15px;
+  padding: 0 1rem 1rem;
 }
 
 .service a {
   display: block;
+  margin: 1rem;
+  padding: 0.75rem;
   background: #222;
-  color: white;
-  margin: 15px;
-  padding: 12px;
+  color: #fff;
 }
 
 /* ===== VISION ===== */
 #vision {
-  background: url('../images/vision.jpg') center/cover no-repeat;
-  padding: 60px 20px;
+  background: url('../images/vision.jpg') center / cover no-repeat;
+  padding: 3.5rem 1.25rem;
   color: white;
 }
 
 .vision-content {
   background: rgba(0,0,0,0.6);
-  padding: 20px;
-  max-width: 600px;
+  padding: 1.5rem;
+  max-width: 37rem;
 }
 
 .btn-dark {
-  border: 2px solid #c78c06;
-  padding: 12px 20px;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 2px solid #c78c06;
   color: white;
 }
 
 /* ===== TEAM ===== */
 #team {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .team-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .team-member {
@@ -184,60 +183,60 @@ form button {
 
 .team-text {
   background: #ffe6ac;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .role {
   font-weight: bold;
   border-bottom: 2px solid #c78c06;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 /* ===== CONTACT ===== */
 #contact {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .contact-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
+  padding: 0.6rem;
   width: 100%;
 }
 
 .contact-form textarea {
-  height: 120px;
+  min-height: 7.5rem;
 }
 
 .contact-form button {
   background: #222;
   color: #c78c06;
-  padding: 10px 20px;
+  padding: 0.6rem 1rem;
   border: none;
   width: fit-content;
 }
 
 iframe {
   width: 100%;
-  height: 300px;
+  height: 18rem;
 }
 
-/* TABLE */
+/* ===== TABLE ===== */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 th {
@@ -246,21 +245,18 @@ th {
 
 th, td {
   border: 1px solid #222;
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 /* ===== FOOTER ===== */
 footer {
   background: #222;
   color: #c78c06;
-  padding: 20px;
   text-align: center;
+  padding: 1.25rem;
 }
 
- 
-/* ===== DESKTOP VERSION ===== */
- 
-
+/* ===== DESKTOP ===== */
 @media (min-width: 760px) {
 
   .header-container {
@@ -270,24 +266,23 @@ footer {
 
   nav ul {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   form {
-    width: 250px;
+    width: 16rem;
   }
 
   .about-container {
     flex-direction: row;
   }
 
-  .about-container img,
-  .about-container div {
+  .about-container > * {
     width: 50%;
   }
 
   .services-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .team-member {
@@ -307,43 +302,38 @@ footer {
     flex-direction: row;
   }
 
-  .contact-form,
-  .contact-map {
+  .contact-container > * {
     width: 50%;
   }
 }
 
-/* === SEARCH BUTTON (LOUPE JAUNE MOCKUP) === */
-
+/* ===== SEARCH ICON ===== */
 .search-btn {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #222;
   border: 1px solid #c78c06;
   position: relative;
-  cursor: pointer;
 }
 
-/* cercle */
 .search-btn::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.9rem;
+  height: 0.9rem;
   border: 2px solid #c78c06;
   border-radius: 50%;
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
-/* manche */
 .search-btn::after {
   content: "";
-  width: 8px;
+  width: 0.5rem;
   height: 2px;
   background: #c78c06;
   position: absolute;
-  top: 22px;
-  left: 20px;
+  top: 1.3rem;
+  left: 1.2rem;
   transform: rotate(45deg);
 }
